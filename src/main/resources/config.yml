@@ -1,0 +1,24 @@
+# Anti-Admin Abuse Plugin Configuration
+
+# Maximum number of command records to store per player/console
+# Older records will be automatically deleted when this limit is exceeded
+max-records-per-player: 1000
+
+# Commands to exclude from logging (case-insensitive)
+# These commands will never be logged for any player
+excluded-commands:
+  - "commands"
+  - "help"
+  - "?"
+
+# Whether to log console commands
+log-console-commands: true
+
+# Whether to enable coordinate obfuscation in console logs
+enable-coordinate-obfuscation: true
+
+# Messages
+messages:
+  no-permission: "&cYou don't have permission to use this command."
+  no-history: "&eNo command history found for: %player%"
+  invalid-page: "&cInvalid page number: %page%" 

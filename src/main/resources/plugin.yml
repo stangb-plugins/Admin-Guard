@@ -1,0 +1,24 @@
+name: AntiAdminAbuse
+version: 1.0.0
+main: com.antiabuse.AntiAdminAbusePlugin
+api-version: "1.13"
+author: Stxrlight (@Stxreal)
+description: Anti-admin abuse plugin that logs commands and obfuscates coordinates
+
+commands:
+  abuse:
+    description: Anti-admin abuse commands
+    usage: /abuse <commands|op> [args...]
+    permission: antiabuse.view
+    aliases: [antiabuse]
+
+permissions:
+  antiabuse.view:
+    description: Allows viewing command history, operator list, and using spy features
+    default: true
+  antiabuse.admin:
+    description: Allows clearing all records and reloading the plugin
+    default: op
+  antiabuse.exempt:
+    description: Exempts player from command logging
+    default: false 
